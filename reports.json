@@ -1,0 +1,328 @@
+[
+{
+  "description": [
+    "Idea from this short test is",
+    "to develop the understanding of technical abilities of the candidate",
+    "such as framework design, framework creation, reporting etc."
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/qademo.feature:6",
+      "name": "search on google",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/qademo.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:12"
+          },
+          "name": "search keyword on google",
+          "result": {
+            "duration": 3.44566011428833,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"features\\steps\\qademo.py\", line 20, in step_impl",
+              "    searchBar.send_keys(\"list of cloud platform\")",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 570, in send_keys",
+              "    self._execute(Command.SEND_KEYS_TO_ELEMENT,",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 740, in _execute",
+              "    return self._parent.execute(command, params)",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 430, in execute",
+              "    self.error_handler.check_response(response)",
+              "  File \"D:\\Program Files\\python\\python3104\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 247, in check_response",
+              "    raise exception_class(message, screen, stacktrace)",
+              "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable",
+              "  (Session info: headless chrome=101.0.4951.54)",
+              "Stacktrace:",
+              "Backtrace:",
+              "\tOrdinal0 [0x00D6B8F3+2406643]",
+              "\tOrdinal0 [0x00CFAF31+1945393]",
+              "\tOrdinal0 [0x00BEC610+837136]",
+              "\tOrdinal0 [0x00C149C3+1001923]",
+              "\tOrdinal0 [0x00C140A5+999589]",
+              "\tOrdinal0 [0x00C3427C+1131132]",
+              "\tOrdinal0 [0x00C0FA64+981604]",
+              "\tOrdinal0 [0x00C34494+1131668]",
+              "\tOrdinal0 [0x00C44682+1197698]",
+              "\tOrdinal0 [0x00C34096+1130646]",
+              "\tOrdinal0 [0x00C0E636+976438]",
+              "\tOrdinal0 [0x00C0F546+980294]",
+              "\tGetHandleVerifier [0x00FD9612+2498066]",
+              "\tGetHandleVerifier [0x00FCC920+2445600]",
+              "\tGetHandleVerifier [0x00E04F2A+579370]",
+              "\tGetHandleVerifier [0x00E03D36+574774]",
+              "\tOrdinal0 [0x00D01C0B+1973259]",
+              "\tOrdinal0 [0x00D06688+1992328]",
+              "\tOrdinal0 [0x00D06775+1992565]",
+              "\tOrdinal0 [0x00D0F8D1+2029777]",
+              "\tBaseThreadInitThunk [0x7544FA29+25]",
+              "\tRtlGetAppContainerNamedObjectPath [0x77517A7E+286]",
+              "\tRtlGetAppContainerNamedObjectPath [0x77517A4E+238]",
+              ""
+            ],
+            "status": "failed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/qademo.feature:8",
+          "name": "we should get result on ZDnet",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/qademo.feature:16",
+      "name": "list of cloud platform on ZDNet -- @1.1 CloudPlatform",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/qademo.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:32"
+          },
+          "name": "list of cloud platform on ZDNet",
+          "result": {
+            "duration": 3.764645576477051,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/qademo.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:48"
+          },
+          "name": "we check the list",
+          "result": {
+            "duration": 0.07401704788208008,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/qademo.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "name",
+                "value": "Amazon Web Services"
+              }
+            ],
+            "location": "features/steps/qademo.py:63"
+          },
+          "name": "we should find Amazon Web Services",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/qademo.feature:17",
+      "name": "list of cloud platform on ZDNet -- @1.2 CloudPlatform",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/qademo.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:32"
+          },
+          "name": "list of cloud platform on ZDNet",
+          "result": {
+            "duration": 33.31623029708862,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/qademo.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:48"
+          },
+          "name": "we check the list",
+          "result": {
+            "duration": 0.06877756118774414,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/qademo.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "name",
+                "value": "Microsoft Azure"
+              }
+            ],
+            "location": "features/steps/qademo.py:63"
+          },
+          "name": "we should find Microsoft Azure",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/qademo.feature:18",
+      "name": "list of cloud platform on ZDNet -- @1.3 CloudPlatform",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/qademo.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:32"
+          },
+          "name": "list of cloud platform on ZDNet",
+          "result": {
+            "duration": 33.32924723625183,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/qademo.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:48"
+          },
+          "name": "we check the list",
+          "result": {
+            "duration": 0.06878089904785156,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/qademo.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "name",
+                "value": "Google Cloud Platform"
+              }
+            ],
+            "location": "features/steps/qademo.py:63"
+          },
+          "name": "we should find Google Cloud Platform",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/qademo.feature:20",
+      "name": "view the AWS page",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/qademo.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:76"
+          },
+          "name": "click on View now at AWS button",
+          "result": {
+            "duration": 3.036684274673462,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/qademo.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:88"
+          },
+          "name": "it opens up a new tab within the same browser",
+          "result": {
+            "duration": 0.14750361442565918,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/qademo.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:104"
+          },
+          "name": "it opens up AWS page",
+          "result": {
+            "duration": 0.003645658493041992,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/qademo.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/qademo.py:117"
+          },
+          "name": "it lands to the page which shows AWS title",
+          "result": {
+            "duration": 0.042009592056274414,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/qademo.feature:1",
+  "name": "QA Demo",
+  "status": "failed",
+  "tags": []
+}
+]
